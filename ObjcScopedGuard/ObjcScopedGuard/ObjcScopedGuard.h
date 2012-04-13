@@ -1,8 +1,7 @@
 #ifndef __ObjcScopedGuard_H__
 #define __ObjcScopedGuard_H__
 
-
-typedef void (^GuardCallbackBlock)(void);
+#include <ObjcScopedGuard/ObjcGuardBlocks.h>
 
 namespace Utils
 {

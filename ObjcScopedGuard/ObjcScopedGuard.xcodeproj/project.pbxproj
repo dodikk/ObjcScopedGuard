@@ -21,6 +21,8 @@
 		7E8B6C8115388E9400435EDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E8B6C6415388BD500435EDA /* InfoPlist.strings */; };
 		7E8B6C8A15388F7800435EDA /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C8915388F7800435EDA /* libstdc++.dylib */; };
 		7E8B6C8B15388F8100435EDA /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C8915388F7800435EDA /* libstdc++.dylib */; };
+		7E8B6C911538959B00435EDA /* ObjcReferendeCountGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */; };
+		7E8B6C921538959B00435EDA /* ObjcReferendeCountGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		7E8B6C8715388E9400435EDA /* ObjcScopedGuardTests copy.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ObjcScopedGuardTests copy.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8B6C8815388E9400435EDA /* ObjcScopedGuardTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjcScopedGuardTests copy-Info.plist"; path = "/Users/dodikk/projects/lib/ObjcScopedGuard/ObjcScopedGuard/ObjcScopedGuardTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E8B6C8915388F7800435EDA /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcReferendeCountGuard.h; sourceTree = "<group>"; };
+		7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcReferendeCountGuard.m; sourceTree = "<group>"; };
+		7E8B6C94153895BD00435EDA /* ObjcGuardBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcGuardBlocks.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +134,12 @@
 		7E8B6C4D15388BD500435EDA /* ObjcScopedGuard */ = {
 			isa = PBXGroup;
 			children = (
+				7E8B6C4E15388BD500435EDA /* Supporting Files */,
 				7E8B6C5015388BD500435EDA /* ObjcScopedGuard.h */,
 				7E8B6C5115388BD500435EDA /* ObjcScopedGuard.mm */,
-				7E8B6C4E15388BD500435EDA /* Supporting Files */,
+				7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */,
+				7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */,
+				7E8B6C94153895BD00435EDA /* ObjcGuardBlocks.h */,
 			);
 			path = ObjcScopedGuard;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E8B6C911538959B00435EDA /* ObjcReferendeCountGuard.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E8B6C5215388BD500435EDA /* ObjcScopedGuard.mm in Sources */,
+				7E8B6C921538959B00435EDA /* ObjcReferendeCountGuard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +388,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = .;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 			};
@@ -395,6 +406,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = .;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -476,6 +488,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = .;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-lCoverageFopenFix",
@@ -581,6 +594,7 @@
 				7E8B6C6E15388BD500435EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E8B6C6F15388BD500435EDA /* Build configuration list for PBXNativeTarget "ObjcScopedGuardTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +604,7 @@
 				7E8B6C7115388BD500435EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E8B6C8315388E9400435EDA /* Build configuration list for PBXNativeTarget "ObjcScopedGuardTests-CI" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +614,7 @@
 				7E8B6C8615388E9400435EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
