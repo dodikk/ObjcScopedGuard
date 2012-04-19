@@ -1,4 +1,5 @@
 .svn
+._*
 build
 DerivedData
 svnignore.*
