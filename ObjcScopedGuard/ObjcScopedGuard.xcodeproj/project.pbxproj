@@ -103,8 +103,6 @@
 		7E8B6C3D15388BD500435EDA = {
 			isa = PBXGroup;
 			children = (
-				7E8B6C8915388F7800435EDA /* libstdc++.dylib */,
-				7E8B6C7515388E6900435EDA /* libCoverageFopenFix.a */,
 				7E8B6C4D15388BD500435EDA /* ObjcScopedGuard */,
 				7E8B6C6115388BD500435EDA /* ObjcScopedGuardTests */,
 				7E8B6C4A15388BD500435EDA /* Frameworks */,
@@ -126,6 +124,8 @@
 		7E8B6C4A15388BD500435EDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E8B6C8915388F7800435EDA /* libstdc++.dylib */,
+				7E8B6C7515388E6900435EDA /* libCoverageFopenFix.a */,
 				7E8B6C4B15388BD500435EDA /* Foundation.framework */,
 				7E8B6C5915388BD500435EDA /* SenTestingKit.framework */,
 				7E8B6C5B15388BD500435EDA /* UIKit.framework */,
