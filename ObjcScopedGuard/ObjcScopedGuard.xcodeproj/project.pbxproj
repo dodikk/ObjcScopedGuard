@@ -23,6 +23,7 @@
 		7E8B6C8B15388F8100435EDA /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C8915388F7800435EDA /* libstdc++.dylib */; };
 		7E8B6C911538959B00435EDA /* ObjcReferendeCountGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */; };
 		7E8B6C921538959B00435EDA /* ObjcReferendeCountGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */; };
+		7EEE0CB2153FF7370057D56C /* FloatComparator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7EEE0CB1153FF7370057D56C /* FloatComparator.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcReferendeCountGuard.h; sourceTree = "<group>"; };
 		7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcReferendeCountGuard.m; sourceTree = "<group>"; };
 		7E8B6C94153895BD00435EDA /* ObjcGuardBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcGuardBlocks.h; sourceTree = "<group>"; };
+		7EEE0CB1153FF7370057D56C /* FloatComparator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FloatComparator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */,
 				7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */,
 				7E8B6C94153895BD00435EDA /* ObjcGuardBlocks.h */,
+				7EEE0CB1153FF7370057D56C /* FloatComparator.hpp */,
 			);
 			path = ObjcScopedGuard;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E8B6C911538959B00435EDA /* ObjcReferendeCountGuard.h in Headers */,
+				7EEE0CB2153FF7370057D56C /* FloatComparator.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
