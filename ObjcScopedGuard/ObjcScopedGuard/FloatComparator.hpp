@@ -3,7 +3,7 @@
 
 #include <cmath>
 
-// TODO : use more sophisticated and precise comparisson methods
+// use more sophisticated and precise comparisson methods
 // http://www.cygnus-software.com/papers/comparingfloats/comparingfloats.htm
 
 namespace Utils
