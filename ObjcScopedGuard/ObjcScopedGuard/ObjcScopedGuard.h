@@ -13,6 +13,10 @@ namespace Utils
         void Release();
 
     private:
+        ObjcScopedGuard( const ObjcScopedGuard& otherGuard_ );
+        ObjcScopedGuard& operator=( const ObjcScopedGuard& otherGuard_ );
+        
+    private:
         GuardCallbackBlock _block;
         bool _isActive;
     };
