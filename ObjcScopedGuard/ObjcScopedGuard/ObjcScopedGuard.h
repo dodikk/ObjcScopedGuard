@@ -10,7 +10,7 @@ namespace Utils
     public:
         explicit ObjcScopedGuard( GuardCallbackBlock callback_ );
         virtual ~ObjcScopedGuard() throw();
-        void Release();
+        void Release() throw();
 
     private:
         ObjcScopedGuard( const ObjcScopedGuard& otherGuard_ );

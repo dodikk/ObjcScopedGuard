@@ -16,7 +16,7 @@ ObjcScopedGuard::~ObjcScopedGuard() throw()
     }
 }
 
-void ObjcScopedGuard::Release()
+void ObjcScopedGuard::Release() throw()
 {
     this->_isActive = false;
 }
