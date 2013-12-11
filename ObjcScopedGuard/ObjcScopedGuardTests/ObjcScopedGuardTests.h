@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Embedded Sources. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface ObjcScopedGuardTests : SenTestCase
+@interface ObjcScopedGuardTests : XCTestCase
 
 @end
