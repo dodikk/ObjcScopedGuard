@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   
   s.ios.platform          = :ios, '6.0'
   s.ios.deployment_target = '6.0'
-
+  s.ios.requires_arc = true
 
   s.ios.header_mappings_dir = 'ObjcScopedGuard/ObjcScopedGuard'
   s.ios.source_files = "ObjcScopedGuard/ObjcScopedGuard/**/*.{c,cpp,mm,h,m}"
