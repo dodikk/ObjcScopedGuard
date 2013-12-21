@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = "ObjcScopedGuard"
   s.version      = "1.0"
-  s.summary      = "A class in Objective-C++ to effectively manage critical resources such as files, streams, sockets. It uses Objective-C blocks to hold cleanup actions"
-  s.description  = "The resource gets disposed once the function exits. You won't forget to close your file or dismiss the operation queue anymore."
+  s.summary      = "A class in Objective-C++ to effectively manage critical resources such as files, streams, sockets."
+  s.description  = "A class in Objective-C++ to effectively manage critical resources such as files, streams, sockets. It uses Objective-C blocks to hold cleanup actions. The resource gets disposed once the function exits. You won't forget to close your file or dismiss the operation queue anymore."
   s.homepage     = "https://github.com/dodikk/ObjcScopedGuard"
   s.license      = 'BSD'
   s.source       = { :git => "https://github.com/dodikk/ObjcScopedGuard.git", :tag => 'v1.0'}
