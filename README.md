@@ -43,7 +43,7 @@ This class should be used to dispose resources that are not managed by ARC inclu
 
 1. **File** and **stream** handles
 2. **dispatch_source_t** instances
-3. ** sqlite3* ** handles
+3. ** sqlite3 ** handles
 4. CoreFoundation objects (those disposed by **CFRelease**)
 
 
