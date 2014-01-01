@@ -35,6 +35,9 @@ void bad(const char* p)
 
 The scoped guard idiom can be treated as an **autorelease** or **@autoreleasepool** statement for low level resources. Unlike **autorelease** the resource is disposed **at the moment the function exits**. Moreover, it works both for **return** and for **@throw exteption** cases. 
 
+```
+The ObjcScopedGuard class uses Objective-C blocks for easiy integration with existing legacy code.
+```
 
 
 
@@ -53,16 +56,19 @@ The code from the previous section can be rewritten in the resource safe and sca
 using namespace ::std;
 using namespace ::Utils;
 
-void bad(const char* p)
+void good(const char* p)
 {
    FILE* fh = fopen(p,"r"); // acquire
 	
+	// the block to perform cleanup actions
     GuardCallbackBlock releaseBlock_ = ^void( void )
     {
        cout << "fclose() called" << endl;
        ::fclose( fh ); // release
     };
 	
+	// creating a guard
+	ObjcScopedGuard guard( releaseBlock_ );
 	
 	// use f
 	if ( someCondition )
@@ -81,6 +87,50 @@ void bad(const char* p)
     */
 }
 ```
+
+
+## One More Thing...
+Sometimes objects should live longer than the function scope and integrated with the **Cocoa autoreleasepool system**. Meaning, it should be possible to **retain** and **release** the guard. The ```ObjcReferendeCountGuard``` class which is a part of this library solves the mentioned problem.
+
+
+```objective-c
+using namespace ::std;
+using namespace ::Utils;
+
+void good_retain_release(const char* p, id<GuardHolderProtocol> guardHolder)
+{
+   FILE* fh = fopen(p,"r"); // acquire
+
+	
+	// the block to perform cleanup actions
+    GuardCallbackBlock releaseBlock_ = ^void( void )
+    {
+       cout << "fclose() called" << endl;
+       ::fclose( fh ); // release
+    };
+
+
+	// creating a guard and storing a strong reference to it
+	guardHolder.guard = [ [ ObjcReferendeCountGuard alloc ] initWithBlock: releaseBlock_ ];	
+	
+	// use f
+	if ( someCondition )
+	{
+	    // Now the scoped guard will release the resource
+	    return;
+	}
+		
+	f(); // OOPS! Exceptions can be thrown.
+
+
+	// Fclose should not be called explicitly since the 
+    /*
+	fclose(fh); // release
+    cout << "fclose() called" << endl;
+    */
+}
+```
+
 
 
 
