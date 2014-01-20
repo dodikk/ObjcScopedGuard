@@ -136,3 +136,6 @@ void good_retain_release(const char* p, id<GuardHolderProtocol> guardHolder)
 
 ## Bibliography
 Some [code examples](http://ideone.com/enqHPr) have been taken from the "Resource Acquisition is Initialization" [presentation](http://www.slideshare.net/adankevich/raii-and-scopeguard) by Andrey Dankevich.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dodikk/objcscopedguard/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
