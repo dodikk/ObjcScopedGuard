@@ -7,18 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E69EE4018901F90003043B3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E69EE3F18901F90003043B3 /* XCTest.framework */; };
 		7E8B6C4C15388BD500435EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C4B15388BD500435EDA /* Foundation.framework */; };
 		7E8B6C5215388BD500435EDA /* ObjcScopedGuard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C5115388BD500435EDA /* ObjcScopedGuard.mm */; };
 		7E8B6C5D15388BD500435EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C4B15388BD500435EDA /* Foundation.framework */; };
 		7E8B6C6015388BD500435EDA /* libObjcScopedGuard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C4815388BD500435EDA /* libObjcScopedGuard.a */; };
 		7E8B6C6615388BD500435EDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E8B6C6415388BD500435EDA /* InfoPlist.strings */; };
 		7E8B6C6915388BD500435EDA /* ObjcScopedGuardTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C6815388BD500435EDA /* ObjcScopedGuardTests.mm */; };
-		7E8B6C7A15388E9400435EDA /* ObjcScopedGuardTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C6815388BD500435EDA /* ObjcScopedGuardTests.mm */; };
-		7E8B6C7E15388E9400435EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C4B15388BD500435EDA /* Foundation.framework */; };
-		7E8B6C7F15388E9400435EDA /* libObjcScopedGuard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C4815388BD500435EDA /* libObjcScopedGuard.a */; };
-		7E8B6C8115388E9400435EDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E8B6C6415388BD500435EDA /* InfoPlist.strings */; };
 		7E8B6C8A15388F7800435EDA /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C8915388F7800435EDA /* libstdc++.dylib */; };
-		7E8B6C8B15388F8100435EDA /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C8915388F7800435EDA /* libstdc++.dylib */; };
 		7E8B6C911538959B00435EDA /* ObjcReferendeCountGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */; };
 		7E8B6C921538959B00435EDA /* ObjcReferendeCountGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */; };
 		7EEE0CB2153FF7370057D56C /* FloatComparator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7EEE0CB1153FF7370057D56C /* FloatComparator.hpp */; };
@@ -32,16 +28,11 @@
 			remoteGlobalIDString = 7E8B6C4715388BD500435EDA;
 			remoteInfo = ObjcScopedGuard;
 		};
-		7E8B6C7815388E9400435EDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E8B6C3F15388BD500435EDA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E8B6C4715388BD500435EDA;
-			remoteInfo = ObjcScopedGuard;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E69EE3F18901F90003043B3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7E8117B4188FCCFA002FC987 /* libXCode5gcovPatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXCode5gcovPatch.a; sourceTree = "<group>"; };
 		7E8B6C4815388BD500435EDA /* libObjcScopedGuard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjcScopedGuard.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8B6C4B15388BD500435EDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E8B6C4F15388BD500435EDA /* ObjcScopedGuard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcScopedGuard-Prefix.pch"; sourceTree = "<group>"; };
@@ -54,7 +45,6 @@
 		7E8B6C6715388BD500435EDA /* ObjcScopedGuardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcScopedGuardTests.h; sourceTree = "<group>"; };
 		7E8B6C6815388BD500435EDA /* ObjcScopedGuardTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcScopedGuardTests.mm; sourceTree = "<group>"; };
 		7E8B6C7515388E6900435EDA /* libCoverageFopenFix.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCoverageFopenFix.a; sourceTree = "<group>"; };
-		7E8B6C8715388E9400435EDA /* ObjcScopedGuardTests copy.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ObjcScopedGuardTests copy.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8B6C8815388E9400435EDA /* ObjcScopedGuardTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjcScopedGuardTests copy-Info.plist"; path = "/Users/dodikk/projects/lib/ObjcScopedGuard/ObjcScopedGuard/ObjcScopedGuardTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E8B6C8915388F7800435EDA /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcReferendeCountGuard.h; sourceTree = "<group>"; };
@@ -76,19 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E69EE4018901F90003043B3 /* XCTest.framework in Frameworks */,
 				7E8B6C8A15388F7800435EDA /* libstdc++.dylib in Frameworks */,
 				7E8B6C5D15388BD500435EDA /* Foundation.framework in Frameworks */,
 				7E8B6C6015388BD500435EDA /* libObjcScopedGuard.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E8B6C7B15388E9400435EDA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E8B6C8B15388F8100435EDA /* libstdc++.dylib in Frameworks */,
-				7E8B6C7E15388E9400435EDA /* Foundation.framework in Frameworks */,
-				7E8B6C7F15388E9400435EDA /* libObjcScopedGuard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +92,6 @@
 			children = (
 				7E8B6C4815388BD500435EDA /* libObjcScopedGuard.a */,
 				7E8B6C5815388BD500435EDA /* ObjcScopedGuardTests.xctest */,
-				7E8B6C8715388E9400435EDA /* ObjcScopedGuardTests copy.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +99,8 @@
 		7E8B6C4A15388BD500435EDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E69EE3F18901F90003043B3 /* XCTest.framework */,
+				7E8117B4188FCCFA002FC987 /* libXCode5gcovPatch.a */,
 				7E8B6C8915388F7800435EDA /* libstdc++.dylib */,
 				7E8B6C7515388E6900435EDA /* libCoverageFopenFix.a */,
 				7E8B6C4B15388BD500435EDA /* Foundation.framework */,
@@ -219,25 +201,6 @@
 			productReference = 7E8B6C5815388BD500435EDA /* ObjcScopedGuardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7E8B6C7615388E9400435EDA /* ObjcScopedGuardTests-CI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E8B6C8315388E9400435EDA /* Build configuration list for PBXNativeTarget "ObjcScopedGuardTests-CI" */;
-			buildPhases = (
-				7E8B6C7915388E9400435EDA /* Sources */,
-				7E8B6C7B15388E9400435EDA /* Frameworks */,
-				7E8B6C8015388E9400435EDA /* Resources */,
-				7E8B6C8215388E9400435EDA /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E8B6C7715388E9400435EDA /* PBXTargetDependency */,
-			);
-			name = "ObjcScopedGuardTests-CI";
-			productName = ObjcScopedGuardTests;
-			productReference = 7E8B6C8715388E9400435EDA /* ObjcScopedGuardTests copy.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -261,7 +224,6 @@
 			targets = (
 				7E8B6C4715388BD500435EDA /* ObjcScopedGuard */,
 				7E8B6C5715388BD500435EDA /* ObjcScopedGuardTests */,
-				7E8B6C7615388E9400435EDA /* ObjcScopedGuardTests-CI */,
 			);
 		};
 /* End PBXProject section */
@@ -275,31 +237,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E8B6C8015388E9400435EDA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E8B6C8115388E9400435EDA /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		7E8B6C5615388BD500435EDA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		7E8B6C8215388E9400435EDA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -332,14 +273,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E8B6C7915388E9400435EDA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E8B6C7A15388E9400435EDA /* ObjcScopedGuardTests.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -347,11 +280,6 @@
 			isa = PBXTargetDependency;
 			target = 7E8B6C4715388BD500435EDA /* ObjcScopedGuard */;
 			targetProxy = 7E8B6C5E15388BD500435EDA /* PBXContainerItemProxy */;
-		};
-		7E8B6C7715388E9400435EDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7E8B6C4715388BD500435EDA /* ObjcScopedGuard */;
-			targetProxy = 7E8B6C7815388E9400435EDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -439,10 +367,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch";
 				INFOPLIST_FILE = "ObjcScopedGuardTests/ObjcScopedGuardTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/untitled/projects/lib-third-party/ObjcScopedGuard/ObjcScopedGuard",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -453,10 +386,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch";
 				INFOPLIST_FILE = "ObjcScopedGuardTests/ObjcScopedGuardTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/untitled/projects/lib-third-party/ObjcScopedGuard/ObjcScopedGuard",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -509,55 +447,22 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch";
 				INFOPLIST_FILE = "ObjcScopedGuardTests/ObjcScopedGuardTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/untitled/projects/lib-third-party/ObjcScopedGuard/ObjcScopedGuard",
+				);
+				OTHER_LDFLAGS = (
+					"-lXCode5gcovPatch",
+					"-L.",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Coverage;
-		};
-		7E8B6C8415388E9400435EDA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch";
-				INFOPLIST_FILE = "ObjcScopedGuardTests copy-Info.plist";
-				PRODUCT_NAME = "ObjcScopedGuardTests copy";
-			};
-			name = Debug;
-		};
-		7E8B6C8515388E9400435EDA /* Coverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch";
-				INFOPLIST_FILE = "ObjcScopedGuardTests copy-Info.plist";
-				PRODUCT_NAME = "ObjcScopedGuardTests copy";
-			};
-			name = Coverage;
-		};
-		7E8B6C8615388E9400435EDA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch";
-				INFOPLIST_FILE = "ObjcScopedGuardTests copy-Info.plist";
-				PRODUCT_NAME = "ObjcScopedGuardTests copy";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -588,16 +493,6 @@
 				7E8B6C7015388BD500435EDA /* Debug */,
 				7E8B6C7415388DFE00435EDA /* Coverage */,
 				7E8B6C7115388BD500435EDA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7E8B6C8315388E9400435EDA /* Build configuration list for PBXNativeTarget "ObjcScopedGuardTests-CI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E8B6C8415388E9400435EDA /* Debug */,
-				7E8B6C8515388E9400435EDA /* Coverage */,
-				7E8B6C8615388E9400435EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
