@@ -54,4 +54,10 @@
  */
 -(void)releaseGuard;
 
+
+/**
+ Deallocates the memory occupied by the receiver. Also it calls the resource disposal block unless the [ObjcReferendeCountGuard releaseGuard] has been executed.
+ */
+-(void)dealloc;
+
 @end
