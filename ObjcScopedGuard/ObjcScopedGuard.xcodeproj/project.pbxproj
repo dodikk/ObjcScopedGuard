@@ -16,7 +16,7 @@
 		7E8B6C6915388BD500435EDA /* ObjcScopedGuardTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C6815388BD500435EDA /* ObjcScopedGuardTests.mm */; };
 		7E8B6C8A15388F7800435EDA /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C8915388F7800435EDA /* libstdc++.dylib */; };
 		7E8B6C911538959B00435EDA /* ObjcReferendeCountGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */; };
-		7E8B6C921538959B00435EDA /* ObjcReferendeCountGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */; };
+		7E8B6C921538959B00435EDA /* ObjcReferendeCountGuard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.mm */; };
 		7EEE0CB2153FF7370057D56C /* FloatComparator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7EEE0CB1153FF7370057D56C /* FloatComparator.hpp */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		7E8117B4188FCCFA002FC987 /* libXCode5gcovPatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXCode5gcovPatch.a; sourceTree = "<group>"; };
 		7E8B6C4815388BD500435EDA /* libObjcScopedGuard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjcScopedGuard.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8B6C4B15388BD500435EDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7E8B6C4F15388BD500435EDA /* ObjcScopedGuard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcScopedGuard-Prefix.pch"; sourceTree = "<group>"; };
+		7E8B6C4F15388BD500435EDA /* ObjcScopedGuard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ObjcScopedGuard-Prefix.pch"; path = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch"; sourceTree = "<group>"; };
 		7E8B6C5015388BD500435EDA /* ObjcScopedGuard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcScopedGuard.h; sourceTree = "<group>"; };
 		7E8B6C5115388BD500435EDA /* ObjcScopedGuard.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcScopedGuard.mm; sourceTree = "<group>"; };
 		7E8B6C5815388BD500435EDA /* ObjcScopedGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcScopedGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +48,7 @@
 		7E8B6C8815388E9400435EDA /* ObjcScopedGuardTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjcScopedGuardTests copy-Info.plist"; path = "/Users/dodikk/projects/lib/ObjcScopedGuard/ObjcScopedGuard/ObjcScopedGuardTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E8B6C8915388F7800435EDA /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcReferendeCountGuard.h; sourceTree = "<group>"; };
-		7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcReferendeCountGuard.m; sourceTree = "<group>"; };
+		7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcReferendeCountGuard.mm; sourceTree = "<group>"; };
 		7E8B6C94153895BD00435EDA /* ObjcGuardBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcGuardBlocks.h; sourceTree = "<group>"; };
 		7EEE0CB1153FF7370057D56C /* FloatComparator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FloatComparator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +79,7 @@
 		7E8B6C3D15388BD500435EDA = {
 			isa = PBXGroup;
 			children = (
+				7E8B6C4F15388BD500435EDA /* ObjcScopedGuard-Prefix.pch */,
 				7E8B6C4D15388BD500435EDA /* ObjcScopedGuard */,
 				7E8B6C6115388BD500435EDA /* ObjcScopedGuardTests */,
 				7E8B6C4A15388BD500435EDA /* Frameworks */,
@@ -112,23 +113,14 @@
 		7E8B6C4D15388BD500435EDA /* ObjcScopedGuard */ = {
 			isa = PBXGroup;
 			children = (
-				7E8B6C4E15388BD500435EDA /* Supporting Files */,
 				7E8B6C5015388BD500435EDA /* ObjcScopedGuard.h */,
 				7E8B6C5115388BD500435EDA /* ObjcScopedGuard.mm */,
 				7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */,
-				7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.m */,
+				7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.mm */,
 				7E8B6C94153895BD00435EDA /* ObjcGuardBlocks.h */,
 				7EEE0CB1153FF7370057D56C /* FloatComparator.hpp */,
 			);
 			path = ObjcScopedGuard;
-			sourceTree = "<group>";
-		};
-		7E8B6C4E15388BD500435EDA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7E8B6C4F15388BD500435EDA /* ObjcScopedGuard-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		7E8B6C6115388BD500435EDA /* ObjcScopedGuardTests */ = {
@@ -261,7 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E8B6C5215388BD500435EDA /* ObjcScopedGuard.mm in Sources */,
-				7E8B6C921538959B00435EDA /* ObjcReferendeCountGuard.m in Sources */,
+				7E8B6C921538959B00435EDA /* ObjcReferendeCountGuard.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
