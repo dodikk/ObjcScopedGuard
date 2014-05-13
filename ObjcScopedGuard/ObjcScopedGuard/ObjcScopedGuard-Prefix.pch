@@ -1,7 +1,9 @@
-//
-// Prefix header for all source files of the 'ObjcScopedGuard' target in the 'ObjcScopedGuard' project
-//
 
 #ifdef __OBJC__
    #import <Foundation/Foundation.h>
 #endif
+
+#ifdef __cplusplus
+    #include <stdexcept>
+#endif
+
