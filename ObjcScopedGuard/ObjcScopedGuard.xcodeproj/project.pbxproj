@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7E69EE4018901F90003043B3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E69EE3F18901F90003043B3 /* XCTest.framework */; };
+		7E6B21D11A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E6B21D01A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E6B21D71A336D6F00F663E8 /* ObjcScopedGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6B21CC1A336D6F00F663E8 /* ObjcScopedGuard.framework */; };
+		7E6B21DE1A336D6F00F663E8 /* ObjcScopedGuard_DynamicFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B21DD1A336D6F00F663E8 /* ObjcScopedGuard_DynamicFrameworkTests.m */; };
+		7E6B21E71A336DD000F663E8 /* ObjcScopedGuard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C5115388BD500435EDA /* ObjcScopedGuard.mm */; };
+		7E6B21E81A336DD500F663E8 /* ObjcReferendeCountGuard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C901538959B00435EDA /* ObjcReferendeCountGuard.mm */; };
+		7E6B21E91A336DE100F663E8 /* ObjcScopedGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8B6C5015388BD500435EDA /* ObjcScopedGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E6B21EA1A336DE700F663E8 /* ObjcReferendeCountGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8B6C8F1538959B00435EDA /* ObjcReferendeCountGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E6B21EB1A336DEF00F663E8 /* ObjcGuardBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8B6C94153895BD00435EDA /* ObjcGuardBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E6B21EC1A336DF500F663E8 /* FloatComparator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7EEE0CB1153FF7370057D56C /* FloatComparator.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8B6C4C15388BD500435EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C4B15388BD500435EDA /* Foundation.framework */; };
 		7E8B6C5215388BD500435EDA /* ObjcScopedGuard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B6C5115388BD500435EDA /* ObjcScopedGuard.mm */; };
 		7E8B6C5D15388BD500435EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B6C4B15388BD500435EDA /* Foundation.framework */; };
@@ -29,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7E6B21D81A336D6F00F663E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E8B6C3F15388BD500435EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E6B21CB1A336D6F00F663E8;
+			remoteInfo = "ObjcScopedGuard-DynamicFramework";
+		};
 		7E8B6C5E15388BD500435EDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E8B6C3F15388BD500435EDA /* Project object */;
@@ -40,6 +56,12 @@
 
 /* Begin PBXFileReference section */
 		7E69EE3F18901F90003043B3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7E6B21CC1A336D6F00F663E8 /* ObjcScopedGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjcScopedGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6B21CF1A336D6F00F663E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E6B21D01A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcScopedGuard-DynamicFramework.h"; sourceTree = "<group>"; };
+		7E6B21D61A336D6F00F663E8 /* ObjcScopedGuard-DynamicFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ObjcScopedGuard-DynamicFrameworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6B21DC1A336D6F00F663E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E6B21DD1A336D6F00F663E8 /* ObjcScopedGuard_DynamicFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcScopedGuard_DynamicFrameworkTests.m; sourceTree = "<group>"; };
 		7E8117B4188FCCFA002FC987 /* libXCode5gcovPatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXCode5gcovPatch.a; sourceTree = "<group>"; };
 		7E8B6C4815388BD500435EDA /* libObjcScopedGuard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjcScopedGuard.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8B6C4B15388BD500435EDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +87,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E6B21C81A336D6F00F663E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E6B21D31A336D6F00F663E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6B21D71A336D6F00F663E8 /* ObjcScopedGuard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E8B6C4515388BD500435EDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +132,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E6B21CD1A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework */ = {
+			isa = PBXGroup;
+			children = (
+				7E6B21D01A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework.h */,
+				7E6B21CE1A336D6F00F663E8 /* Supporting Files */,
+			);
+			path = "ObjcScopedGuard-DynamicFramework";
+			sourceTree = "<group>";
+		};
+		7E6B21CE1A336D6F00F663E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E6B21CF1A336D6F00F663E8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E6B21DA1A336D6F00F663E8 /* ObjcScopedGuard-DynamicFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E6B21DD1A336D6F00F663E8 /* ObjcScopedGuard_DynamicFrameworkTests.m */,
+				7E6B21DB1A336D6F00F663E8 /* Supporting Files */,
+			);
+			path = "ObjcScopedGuard-DynamicFrameworkTests";
+			sourceTree = "<group>";
+		};
+		7E6B21DB1A336D6F00F663E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E6B21DC1A336D6F00F663E8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7E8B6C3D15388BD500435EDA = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +173,8 @@
 				7E8B6C4D15388BD500435EDA /* ObjcScopedGuard */,
 				7E8B6C6115388BD500435EDA /* ObjcScopedGuardTests */,
 				7EB6DC181922BF760010E481 /* ObjcScopedGuard-Framework */,
+				7E6B21CD1A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework */,
+				7E6B21DA1A336D6F00F663E8 /* ObjcScopedGuard-DynamicFrameworkTests */,
 				7E8B6C4A15388BD500435EDA /* Frameworks */,
 				7E8B6C4915388BD500435EDA /* Products */,
 				7E8B6C8815388E9400435EDA /* ObjcScopedGuardTests copy-Info.plist */,
@@ -114,6 +187,8 @@
 				7E8B6C4815388BD500435EDA /* libObjcScopedGuard.a */,
 				7E8B6C5815388BD500435EDA /* ObjcScopedGuardTests.xctest */,
 				7EB6DC161922BF760010E481 /* ObjcScopedGuard.framework */,
+				7E6B21CC1A336D6F00F663E8 /* ObjcScopedGuard.framework */,
+				7E6B21D61A336D6F00F663E8 /* ObjcScopedGuard-DynamicFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +258,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7E6B21C91A336D6F00F663E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6B21E91A336DE100F663E8 /* ObjcScopedGuard.h in Headers */,
+				7E6B21D11A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework.h in Headers */,
+				7E6B21EB1A336DEF00F663E8 /* ObjcGuardBlocks.h in Headers */,
+				7E6B21EA1A336DE700F663E8 /* ObjcReferendeCountGuard.h in Headers */,
+				7E6B21EC1A336DF500F663E8 /* FloatComparator.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E8B6C4615388BD500435EDA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +293,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7E6B21CB1A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E6B21DF1A336D6F00F663E8 /* Build configuration list for PBXNativeTarget "ObjcScopedGuard-DynamicFramework" */;
+			buildPhases = (
+				7E6B21C71A336D6F00F663E8 /* Sources */,
+				7E6B21C81A336D6F00F663E8 /* Frameworks */,
+				7E6B21C91A336D6F00F663E8 /* Headers */,
+				7E6B21CA1A336D6F00F663E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjcScopedGuard-DynamicFramework";
+			productName = "ObjcScopedGuard-DynamicFramework";
+			productReference = 7E6B21CC1A336D6F00F663E8 /* ObjcScopedGuard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E6B21D51A336D6F00F663E8 /* ObjcScopedGuard-DynamicFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E6B21E31A336D6F00F663E8 /* Build configuration list for PBXNativeTarget "ObjcScopedGuard-DynamicFrameworkTests" */;
+			buildPhases = (
+				7E6B21D21A336D6F00F663E8 /* Sources */,
+				7E6B21D31A336D6F00F663E8 /* Frameworks */,
+				7E6B21D41A336D6F00F663E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E6B21D91A336D6F00F663E8 /* PBXTargetDependency */,
+			);
+			name = "ObjcScopedGuard-DynamicFrameworkTests";
+			productName = "ObjcScopedGuard-DynamicFrameworkTests";
+			productReference = 7E6B21D61A336D6F00F663E8 /* ObjcScopedGuard-DynamicFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7E8B6C4715388BD500435EDA /* ObjcScopedGuard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E8B6C6C15388BD500435EDA /* Build configuration list for PBXNativeTarget "ObjcScopedGuard" */;
@@ -271,6 +394,12 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Embedded Sources";
 				TargetAttributes = {
+					7E6B21CB1A336D6F00F663E8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7E6B21D51A336D6F00F663E8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					7E8B6C5715388BD500435EDA = {
 						TestTargetID = 7EB6DC151922BF760010E481;
 					};
@@ -291,11 +420,27 @@
 				7E8B6C4715388BD500435EDA /* ObjcScopedGuard */,
 				7E8B6C5715388BD500435EDA /* ObjcScopedGuardTests */,
 				7EB6DC151922BF760010E481 /* ObjcScopedGuard-Framework */,
+				7E6B21CB1A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework */,
+				7E6B21D51A336D6F00F663E8 /* ObjcScopedGuard-DynamicFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E6B21CA1A336D6F00F663E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E6B21D41A336D6F00F663E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E8B6C5515388BD500435EDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +505,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E6B21C71A336D6F00F663E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6B21E81A336DD500F663E8 /* ObjcReferendeCountGuard.mm in Sources */,
+				7E6B21E71A336DD000F663E8 /* ObjcScopedGuard.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E6B21D21A336D6F00F663E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6B21DE1A336D6F00F663E8 /* ObjcScopedGuard_DynamicFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E8B6C4415388BD500435EDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,6 +551,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7E6B21D91A336D6F00F663E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E6B21CB1A336D6F00F663E8 /* ObjcScopedGuard-DynamicFramework */;
+			targetProxy = 7E6B21D81A336D6F00F663E8 /* PBXContainerItemProxy */;
+		};
 		7E8B6C5F15388BD500435EDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7E8B6C4715388BD500435EDA /* ObjcScopedGuard */;
@@ -416,6 +583,251 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7E6B21E01A336D6F00F663E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ObjcScopedGuard-DynamicFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ObjcScopedGuard;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E6B21E11A336D6F00F663E8 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ObjcScopedGuard-DynamicFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjcScopedGuard;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Coverage;
+		};
+		7E6B21E21A336D6F00F663E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjcScopedGuard/ObjcScopedGuard-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ObjcScopedGuard-DynamicFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjcScopedGuard;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E6B21E41A336D6F00F663E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ObjcScopedGuard-DynamicFrameworkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E6B21E51A336D6F00F663E8 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ObjcScopedGuard-DynamicFrameworkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Coverage;
+		};
+		7E6B21E61A336D6F00F663E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ObjcScopedGuard-DynamicFrameworkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		7E8B6C6A15388BD500435EDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -693,6 +1105,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E6B21DF1A336D6F00F663E8 /* Build configuration list for PBXNativeTarget "ObjcScopedGuard-DynamicFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6B21E01A336D6F00F663E8 /* Debug */,
+				7E6B21E11A336D6F00F663E8 /* Coverage */,
+				7E6B21E21A336D6F00F663E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E6B21E31A336D6F00F663E8 /* Build configuration list for PBXNativeTarget "ObjcScopedGuard-DynamicFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6B21E41A336D6F00F663E8 /* Debug */,
+				7E6B21E51A336D6F00F663E8 /* Coverage */,
+				7E6B21E61A336D6F00F663E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7E8B6C4215388BD500435EDA /* Build configuration list for PBXProject "ObjcScopedGuard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
