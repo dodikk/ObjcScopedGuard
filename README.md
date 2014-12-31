@@ -1,3 +1,8 @@
+[![Carthage Support](https://img.shields.io/badge/Carthage-✓-5f7cae.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Pod Version](http://img.shields.io/cocoapods/v/ObjcScopedGuard.svg?style=flat)](http://cocoadocs.org/docsets/ObjcScopedGuard/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/ObjcScopedGuard.svg?style=flat)](http://cocoadocs.org/docsets/ObjcScopedGuard/)
+
+
 ## What is ObjcScopedGuard ?
 It is a class in ObjectiveC++ that uses blocks to release resources.
 A scoped guard executes the block in its C++ destructor and ensures correct resource management even if an exception has been thrown.
